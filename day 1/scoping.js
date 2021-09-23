@@ -64,6 +64,15 @@ function main() {
     // d++; // Post-incremento
     // ++d; // Pre-incremento
     // d += 4; // Assegnamento con short notation equivalente a s = s + 4
+
+    // Deep comparison
+    // In javascript è possibile comparare con == (abstract equality) e con === (strict equality)
+    // In breve con == sono uguali oggetti valutabili come uguali anche se di tipo diverso o rappresentati in memoria in modo differente
+    // è sempre preferibile utilizzare la strict equality con triplo uguale ===
+
+    // Approfondire qui:
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+
 };
 
 main();
