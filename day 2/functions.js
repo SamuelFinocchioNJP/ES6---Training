@@ -168,5 +168,6 @@
 })();
 
 // Una funzione può essere così richiamata:
+// Immediately invoked function expression (IIFE)
 (function () {})();
 (() => {})();
