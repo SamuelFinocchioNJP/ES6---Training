@@ -16,6 +16,14 @@
 // a: [1, 2, 3, 4];
 // b: [1, 10, 3, 4]
 
+// con lo spread possiamo anche concatenare array:
+const _arr1 = [1,2,3];
+const _arr2 = [4,5,6];
+const _arr_concat = [..._arr1, ..._arr2];
+console.log(_arr1);
+console.log(_arr2);
+console.log(_arr_concat);
+
 Array.prototype.myMap = function (fn) {
   const arr = [...this]; // questa riga non funzionerebbe con una lambda
   for (let i = 0; i < arr.length; i++) {
