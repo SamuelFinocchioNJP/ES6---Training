@@ -72,7 +72,7 @@ const cloneDeep = (obj) => {
   const _newObj = { ...obj };
 
   Object.keys(_newObj)
-    .filter((_) => typeof _newObj[_] === "object")
+    .filter((key) => typeof _newObj[key] === "object")
     .forEach((key) => {
       // console.log("INTERNAL", key, _newObj[key]);
       _newObj[key] = cloneDeep(_newObj[key]);

@@ -44,5 +44,3 @@ const person1: Person = new Person("Mario", "Rossi", 19);
 console.log(person1); // Visualizzazione standard ( non chiama to string! )
 console.log(person1.toString()); // Esplicita
 console.log("" + person1); // Implicita
-
-
