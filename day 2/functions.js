@@ -6,29 +6,34 @@
 // Funzione lambda grassa
 
 // Una funzione con nome è cosi definita
-// function nome_funzione([...args]) {
-//<com>;*
-//[return exp];
+// function nome_funzione([arguments]) {
+//   [statement];
+//   ...
+//   [return exp];
 // }
 
 // Una funzione espressione è così definita:
-// function ([...args]) {
-//<com>;*
-//[return exp];
+// function ([arguments]) {
+//   [statement];
+//   ...
+//   [return exp];
 // }
 
 // Una funzione lambda grassa ( fat arrow function )
-// definizione formale di lambda grassa la lambda grassa è:  (...args) => { }
+// definizione formale di lambda grassa :
+// ([arguments]) => [return exp]
+// oppure
+// ([arguments]) => {
+//   [statement];
+//   ...
+//   [return exp];
+// }
 
 // Common missconception:
 // Una fat arrow function è una lambda function
 
 // Si definisce una lambda function una funzione utilizzabile come dato
 // Che non dipende cioè dall'ambiente (ENV) e non ha effetti collaterali (side effect)
-
-// Le differenze tra una funzione anonima (function expression) e una funzione freccia grassa (fat arrow function):
-// 1) Differenza sintattica x => x * 2 vs function (x) { return 2 * x }  ( nota che sono entrambe lambda function )
-// 2) Binding di arguments:
 
 (function () {
   function fun() {
