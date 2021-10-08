@@ -42,7 +42,7 @@ console.log(getHairColor(person_1));
 
 // Altenative
 const getHairColorSafe_1 = (person) => {
-  // Versione parlante, prolizza newbie
+  // Versione parlante, prolissa newbie
   if (person.hair) {
     return person.hair.color;
   }

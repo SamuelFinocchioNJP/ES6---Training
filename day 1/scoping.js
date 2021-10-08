@@ -71,8 +71,7 @@ function main() {
     // è sempre preferibile utilizzare la strict equality con triplo uguale ===
 
     // Approfondire qui:
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness    
 };
 
 main();

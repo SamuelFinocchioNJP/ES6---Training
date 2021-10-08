@@ -7,7 +7,20 @@
 // C => G
 // G => C
 
-function DNAStrand(dna) {}
+function mapBase(base) {
+  switch(base) {
+    case 'A': return 'T';
+    case 'T': return 'A';
+    case 'C': return 'G';
+    case 'G': return 'C';
+  }
+}
+
+function DNAStrand(dna) {
+  const swapped = Array(dna.length);
+  for(let i = 0; i < dna.length; i++) swapped[i] = mapBase(dna[i]);
+  return swapped;
+}
 
 // https://www.codewars.com/kata/554e4a2f232cdd87d9000038
 
