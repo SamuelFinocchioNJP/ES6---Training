@@ -1,6 +1,7 @@
 // Strutturare ad oggetti l'architettura di un software che gestisce un laboratorio medico
 // Il laboratorio gestisce:
-// Medici, specializzazioni, patologie relative a specializzazioni, pazienti, creando prenotazioni in fasce di un ora data una data
+// Medici, specializzazioni, patologie relative a specializzazioni, pazienti, 
+// creando prenotazioni in fasce di un ora data una data
 
 // Medici e pazienti hanno dei field in comune evitiamo di ripetere i campi
 
@@ -13,3 +14,7 @@
 
 // 4) Modificare il programma per schedulare in base a priorità
 // 5) Quale potrebbe essere una struttura dati adatta a gestire le prenotazioni in base alla priorità
+
+// npm i --save-dev typescript
+// npx tsc
+// npx tsc --init
