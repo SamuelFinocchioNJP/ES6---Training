@@ -1,0 +1,13 @@
+<div>
+  <header>
+    <h1>TITOLONE</h1>
+    <h2>{{ title }}</h2>
+  </header>
+
+  <app-navbar
+    (onHomeButtonClicked)="doSomething($event)"
+    [navItems]="navItems"
+  ></app-navbar>
+  OGGI: {{ oggi | date: "EEEE/MM/YYYY HH:mm:ss" }}
+  <main></main>
+</div>

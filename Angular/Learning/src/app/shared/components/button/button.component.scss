@@ -1,0 +1,15 @@
+.button {
+  width: 100px;
+  height: 43px;
+  background-color: aquamarine;
+  color: salmon;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  rotate: 90deg;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: tomato;
+}

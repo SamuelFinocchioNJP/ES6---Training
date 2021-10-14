@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a (click)="homeClicked()">Home</a></li>
+    <li *ngFor="let item of navItems">
+      <a [href]="item.url">
+        {{ item.displayName | titlecase  }}
+      </a>
+    </li>
+  </ul>
+</nav>
