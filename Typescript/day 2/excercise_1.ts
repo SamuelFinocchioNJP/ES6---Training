@@ -1,6 +1,6 @@
 // Strutturare ad oggetti l'architettura di un software che gestisce un laboratorio medico
 // Il laboratorio gestisce:
-// Medici, specializzazioni, patologie relative a specializzazioni, pazienti, 
+// Medici, specializzazioni, patologie relative a specializzazioni, pazienti,
 // creando prenotazioni in fasce di un ora data una data
 
 // Medici e pazienti hanno dei field in comune evitiamo di ripetere i campi
@@ -18,3 +18,4 @@
 // npm i --save-dev typescript
 // npx tsc
 // npx tsc --init
+
