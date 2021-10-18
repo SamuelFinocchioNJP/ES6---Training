@@ -1,13 +1,28 @@
-import { AfterViewChecked, Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { IPerson } from 'src/app/shared/interfaces/person.interface';
 import { INavItem } from './core/components/navbar/interfaces/nav-item.interface';
+import { IDropdownItem } from './shared/components/dropdown/interfaces/dropdown-item.interface';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit {
+  @ViewChild('paperella', { static: true }) pp!: ElementRef;
+
+  ngAfterViewInit() {
+    if (this.pp) {
+      this.pp.nativeElement.innerHTML = 'Whale!';
+    }
+  }
+
   constructor() {
     console.log(document.getElementById('paperella'));
   }
@@ -18,13 +33,21 @@ export class AppComponent implements OnInit {
     { displayName: 'twitter', url: 'https://www.twitter.com' },
   ];
 
+  dropdownElements: Array<IDropdownItem> = [
+    { name: 'Drodown 1' },
+    { name: 'Drodown 2' },
+    { name: 'Drodown 3' },
+    { name: 'Drodown 4' },
+  ];
+  cond = true;
   tonno = null;
-  ngOnInit(): void {
-    console.log(document.getElementById('paperella'));
-  }
 
   doSomething(name: string): void {
     alert(name);
+  }
+
+  dropdownRaised(clicked: IDropdownItem) {
+    console.log(clicked);
   }
 
   oggi: Date = new Date();

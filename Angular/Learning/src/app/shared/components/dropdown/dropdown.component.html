@@ -1,0 +1,19 @@
+<div class="dropdown-container">
+  <header class="dropdown-header" (click)="toggleOpen()">
+    <ng-content></ng-content>
+  </header>
+
+  <main *ngIf="isOpen">
+    <ul>
+      <li
+        *ngFor="let item of dropdownItems"
+        [class.purple]="lastClicked(item)"
+        (click)="dropdownItemClicked(item)"
+      >
+        <span>{{ item.name }}</span>
+      </li>
+    </ul>
+  </main>
+</div>
+
+{{ lastClickedStored | json }}

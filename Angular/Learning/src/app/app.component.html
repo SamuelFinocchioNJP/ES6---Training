@@ -11,3 +11,27 @@
   OGGI: {{ oggi | date: "EEEE/MM/YYYY HH:mm:ss" }}
   <main></main>
 </div>
+
+<br />
+<br />
+<br />
+
+<app-dropdown
+  [dropdownItems]="dropdownElements"
+  (onDropdownItemClicked)="dropdownRaised($event)"
+>
+  Hello
+</app-dropdown>
+
+<p appFatten fatLevel="normal">
+  <!-- {{ 'robe' | nomePipe }} // -> nomePipe('robe') -->
+  (A) This paragraph is displayed because the condition is false.
+</p>
+
+<h1>
+  {{ "what looks like a quack and quaks like a duck is a duck" | randomcase }}
+</h1>
+
+<div #paperella>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consequatur.
+</div>
