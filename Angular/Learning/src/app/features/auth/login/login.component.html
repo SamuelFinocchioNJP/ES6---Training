@@ -1,0 +1,16 @@
+<form>
+  <header>Login</header>
+  <div>
+    <label class="label" for="email">Email</label>
+    <input type="email" name="email" id="email" [(ngModel)]="inputEmail"/>
+  </div>
+
+  <div>
+    <label class="label" for="password">Password</label>
+    <input type="password" name="password" id="password" [(ngModel)]="inputPassword"/>
+  </div>
+  <button (click)="signin()">Signin</button>
+</form>
+
+{{ inputEmail }}
+{{ inputPassword }}

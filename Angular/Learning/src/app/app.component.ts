@@ -2,11 +2,11 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
-  OnInit,
   ViewChild,
 } from '@angular/core';
 import { IPerson } from 'src/app/shared/interfaces/person.interface';
 import { INavItem } from './core/components/navbar/interfaces/nav-item.interface';
+import { AuthService } from './features/auth/login/auth.service';
 import { IDropdownItem } from './shared/components/dropdown/interfaces/dropdown-item.interface';
 
 @Component({
@@ -17,13 +17,15 @@ import { IDropdownItem } from './shared/components/dropdown/interfaces/dropdown-
 export class AppComponent implements AfterViewInit {
   @ViewChild('paperella', { static: true }) pp!: ElementRef;
 
+  login: boolean = true;
+  isVisible: boolean = false;
   ngAfterViewInit() {
     if (this.pp) {
       this.pp.nativeElement.innerHTML = 'Whale!';
     }
   }
 
-  constructor() {
+  constructor(public loginService: AuthService) {
     console.log(document.getElementById('paperella'));
   }
 
@@ -39,6 +41,7 @@ export class AppComponent implements AfterViewInit {
     { name: 'Drodown 3' },
     { name: 'Drodown 4' },
   ];
+
   cond = true;
   tonno = null;
 

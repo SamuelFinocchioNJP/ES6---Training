@@ -1,0 +1,19 @@
+<form>
+    <header>Register</header>
+    <div>
+      <label class="label" for="email">Email</label>
+      <input type="email" name="email" id="email" [(ngModel)]="inputEmail"/>
+    </div>
+  
+    <div>
+      <label class="label" for="password">Password</label>
+      <input type="password" name="password" id="password" [(ngModel)]="inputPassword"/>
+    </div>
+
+    <div>
+        <label class="label" for="passwordCheck">Password check</label>
+        <input type="password" name="passwordCheck" id="passwordCheck" [(ngModel)]="inputPasswordCheck"/>
+      </div>
+    <button (click)="signup()">Signup</button>
+  </form>
+  

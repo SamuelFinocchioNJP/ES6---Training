@@ -7,6 +7,8 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { DropdownComponent } from './shared/components/dropdown/dropdown.component';
 import { FattenDirective } from './shared/directives/fatten.directive';
 import { RandomcasePipe } from './shared/pipes/randomcase.pipe';
+import { FormsModule } from '@angular/forms';
+import { AuthModule } from './features/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { RandomcasePipe } from './shared/pipes/randomcase.pipe';
     FattenDirective,
     RandomcasePipe,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule, AuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
